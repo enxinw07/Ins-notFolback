@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Followers Check</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Instagram Followers Check</h1>
+    <div class="card">
+        <p>Follow these steps to download and upload your Instagram followers and following files:</p>
+        <ol>
+            <li>Go to your Instagram profile page, press the top right corner three-line logo, go to <b>settings and privacy</b>.</li>
+            <li>Go to <b>Accounts Centre</b> -> <b>Your information and permissions</b> -> <b>Download your information</b> -> <b>Download or transfer information</b> -> <b>Some of your information</b></li>
+            <li>Select only <b>Followers and following</b> under <b>Connections</b>, press <b>next</b> when done.</li>
+            <li>Select <b>Download to device</b> and press <b>next</b>, choose <b>All time</b> for data range, enter the email you want to receive the files in <b>Notify</b>, choose <b>HTML</b> for <b>Format</b>. Media quality doesn’t matter as you are not downloading images or videos. Choose <b>Create files</b> when done.</li>
+            <li>It will take some time for the file to be sent to your email, 1 minute to 1 day. When you receive the email, download it and upload the respective followers and following file and press <b>upload files</b>.</li>
+            <li>The list of your <b>Following</b> that are not following you back is now generated.</li>
+        </ol>
+    </div>
+    <form id="uploadForm">
+        <label for="followersFile">Followers File:</label>
+        <input type="file" id="followersFile" name="followersFile" accept=".html" required><br><br>
+        
+        <label for="followingFile">Following File:</label>
+        <input type="file" id="followingFile" name="followingFile" accept=".html" required><br><br>
+        
+        <button type="button" onclick="processFiles()">Upload Files</button>
+    </form>
+
+    <h2>Accounts Not Following Back:</h2>
+    <div id="result"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
